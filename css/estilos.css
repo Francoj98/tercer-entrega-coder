@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  margin: 0px;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background-color: #1e3932;
+}
+
+nav {
+  display: flex;
+  position: relative;
+  height: 100px;
+  align-items: center;
+  justify-content: right;
+  padding-right: 10px;
+}
+nav section {
+  align-items: center;
+}
+nav section li {
+  margin-right: 10px;
+}
+nav section li .colgre {
+  color: white;
+}
+nav section li .colgre:hover {
+  color: white;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+h1 .txtintro {
+  font-weight: 800;
+}
+
+footer {
+  height: 100px;
+  background-color: #5c5c5c;
+  color: white;
+}
+footer .redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.container {
+  align-items: center;
+}
+
+.red {
+  width: 50px;
+  height: 20px;
+  margin: 0px;
+  border: 20px 20px 0 20px;
+}
+
+.compra {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  justify-content: space-between;
+}
+
+.cuota {
+  color: #08ad03;
+  font-size: smaller;
+}
+
+.tienda {
+  display: grid;
+  grid-template-columns: 5fr, 5fr 5fr;
+  grid-template-rows: 1fr, 1fr, 1fr;
+  grid-template-areas: "uno dos tres" "cuatro cinco seis" "siete ocho nueve";
+}
+
+@media (max-width: 768px) {
+  .tienda {
+    grid-template-columns: repeat(2, 5fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "uno dos" "tres cuatro" "cinco seis" "siete ocho" "nueve diez";
+  }
+}
+@media (max-width: 425px) {
+  .tienda {
+    grid-template-columns: 5fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete" "ocho" "nueve";
+  }
+}
+.areauno {
+  grid-area: uno;
+}
+
+.areados {
+  grid-area: dos;
+}
+
+.areatres {
+  grid-area: tres;
+}
+
+.areacuatro {
+  grid-area: cuatro;
+}
+
+.areacinco {
+  grid-area: cinco;
+}
+
+.areaseis {
+  grid-area: seis;
+}
+
+.areasiete {
+  grid-area: siete;
+}
+
+.areaocho {
+  grid-area: ocho;
+}
+
+.areanueve {
+  grid-area: nueve;
+}
+
+.areadiez {
+  grid-area: diez;
+}
+
+.marcaimg {
+  width: 400px;
+}
+
+section.intro {
+  margin: 20px;
+}
+
+.container {
+  align-items: center;
+}
+
+img.imgcafeuno {
+  width: 200px;
+  height: 350px;
+  margin: 3px;
+  border: 5px;
+}
+
+img.imgcafedos {
+  width: 300px;
+}
+
+.franja {
+  width: 450px;
+}
+
+.imgcafe {
+  width: 120px;
+  margin: 15px;
+  border-radius: 50%;
+}
+
+.paso {
+  width: 45px;
+  height: 65px;
+  margin: 25px;
+  border: 20px;
+}
+
+@media (max-width: 435px) {
+  .franja {
+    width: 250px;
+  }
+}
+.btn {
+  color: #1e3932;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(4, 5fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "uno dos tres cuatro";
+}
+
+@media (max-width: 425px) {
+  .tarjetas {
+    grid-template-columns: 5fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "uno" "dos" "tres" "cuatro";
+  }
+}
+.areauno {
+  grid-area: uno;
+}
+
+.areados {
+  grid-area: dos;
+}
+
+.areatres {
+  grid-area: tres;
+}
+
+.areacuatro {
+  grid-area: cuatro;
+}
+
+.cards {
+  padding: 10px;
+  margin: 10px;
+}
+
+.cartas {
+  max-width: 540px;
+}
+
+.pasos-preparacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 30px;
+}
+
+.maps {
+  width: 100%;
+  height: 640px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

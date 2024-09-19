@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    @include sizes(100%, 100px, 0px, 0px);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: $colorprimario;   
+}
+
+nav{
+    display: flex;
+    position: relative;
+    height: 100px;
+    align-items: center;
+    justify-content: right;
+    padding-right: 10px;
+    section{
+        align-items: center;
+        li{
+            margin-right: 10px;
+            .colgre{
+                color:$colorsecundario;
+                &:hover{
+                    color:$colorsecundario; 
+                }
+            } 
+        }
+    }   
+}
+
+p{
+    font-family: $fuentes;
+    font-weight: 400;
+    font-style: normal;
+}
+    
+h1{
+    font-family: $fuentes;
+    font-weight: 900;
+    font-style: normal;
+    .txtintro{
+        font-weight: 800;
+    }
+}
+
+footer{
+    height: 100px;
+    background-color: #5c5c5c;
+    color: $colorsecundario;
+    .redes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $colorsecundario;
+    }  
+}
+
+.container{
+    align-items: center;
+}
+
+.red{
+    @include sizes(50px, 20px, 0px, 20px 20px 0 20px);
+}

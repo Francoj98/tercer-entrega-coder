@@ -1,0 +1,82 @@
+.compra{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.cuota{
+    color: #08ad03;
+    font-size: smaller;
+}
+
+.tienda{
+    display: grid;
+    grid-template-columns: 5fr, 5fr 5fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-areas: 
+    "uno dos tres"
+    "cuatro cinco seis"
+    "siete ocho nueve";
+}
+
+@media (max-width:768px){
+    .tienda{
+        grid-template-columns: repeat(2, 5fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        "uno dos"
+        "tres cuatro"
+        "cinco seis"
+        "siete ocho"
+        "nueve diez";
+    }
+}
+
+@media (max-width:425px){
+    .tienda{
+        grid-template-columns: 5fr;
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas: 
+        "uno" 
+        "dos"
+        "tres" 
+        "cuatro"
+        "cinco"
+        "seis"
+        "siete"
+        "ocho"
+        "nueve";
+    }
+}
+
+.areauno{
+    grid-area: uno;
+}
+.areados{
+    grid-area: dos;
+}
+.areatres{
+    grid-area: tres;
+}
+.areacuatro{
+    grid-area: cuatro;
+}
+.areacinco{
+    grid-area: cinco;
+}
+.areaseis{
+    grid-area: seis;
+}
+.areasiete{
+    grid-area: siete;
+}
+.areaocho{
+    grid-area: ocho;
+}
+.areanueve{
+    grid-area: nueve;
+}
+.areadiez{
+    grid-area: diez;
+}

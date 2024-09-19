@@ -1,0 +1,35 @@
+
+//pag inicio
+.marcaimg{
+    width: 400px; 
+}
+
+section.intro{
+    margin: 20px;
+}
+.container{
+    align-items: center;
+}
+img.imgcafeuno{
+    @include sizes(200px, 350px, 3px, 5px);
+}
+
+img.imgcafedos{
+    width: 300px;
+}
+
+//pag cafe
+.franja{
+    width: 450px;
+}
+
+.imgcafe{
+    width: 120px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+//pag preparacion
+.paso{
+    @include sizes(45px, 65px, 25px, 20px);
+}
